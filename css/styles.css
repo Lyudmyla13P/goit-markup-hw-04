@@ -459,9 +459,11 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .footer-list{
     align-items: baseline;
     display: flex;
+    
 }
 .footer-item{
     display: flex;
+    align-items: baseline;
 }
 .social{
     font-weight: 500;
@@ -474,14 +476,15 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 }
 .footer-item-icon{
    display: flex;
+    gap: 16px;
 }
 .footer-link{
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon{
     fill: #f4f4fd;
+    
 }
 .footer-list-icon:hover,
 .footer-list-icon:focus{
@@ -495,4 +498,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-marketing{
+    align-items: baseline;
+    margin-right: 120px;
 }
