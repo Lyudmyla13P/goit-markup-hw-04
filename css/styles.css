@@ -87,11 +87,13 @@ body{
     .menu{
         display: flex;
         gap: 40px;
+       
+
     }
     .menu-item{
         display: flex;
         gap: 40px;
-        border-bottom: 2px solid transparent;
+        position: relative;
     }
    .main-conteiner{
     display: flex;
@@ -104,12 +106,25 @@ body{
         color: #2e2f42;
     }
 .menu-link{
-    padding: 24px 0;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#2E2F42;
+}
+.menu-link::after{
+ 
+    position: absolute;
+    bottom: -1;
+    left: 0;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: #404BBF;
+    content: "";
 }
 .menu-link:hover,
 .menu-link:focus{
@@ -312,9 +327,7 @@ color: var(--NAVY-BLUE, #2E2F42);
     height: 40px;
 }
 
-.menu-item:hover {
-    border-bottom: 2px solid #404BBF;
-}
+
 
 .benefits-list-icon{
     width: 100%;
